@@ -1,0 +1,8 @@
+services: # Serviço da sua aplicação
+  app:
+    build: . # Constrói a imagem a partir do Dockerfile na raíz do projeto
+    container_name: api # Nome do container
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
